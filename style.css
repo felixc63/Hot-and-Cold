@@ -1,3 +1,130 @@
-#logger{
-    border: 2px solid black;
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: "Poppins";
+}
+
+h1{
+    margin: 0;
+    font-size: 80px;
+    background: linear-gradient(to right, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2{
+    margin: 0;
+    font-size: 35px;
+}
+
+h3{
+    font-size: x-large;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#first{
+    display: flex;
+    flex-direction: column;
+}
+
+#middle{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 65%;
+}
+
+#last{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 9%;
+}
+
+#last p{
+    margin: 0;
+    margin-top: -16px;
+}
+
+#commit, #reset, .add, .subtract{
+    font-family: "Courier New";
+    color: white;
+    background: #5E5DF0; 
+    border: 0;
+    box-shadow: blue 0 10px 20px -10px;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+#commit, #reset{
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+
+.add, .subtract{
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    font-size: x-large;
+    border-radius: 50px;
+}
+
+#commit:hover, #reset:hover, .add:hover, .subtract:hover{
+    transform: scale(1.05);
+}
+
+.first-div-holder{
+    width: 300px;
+    height: 300px;
+    border: 3px solid white;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+#instructions p{
+    font-size: 15px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+
+.btn-holder{
+    display: flex;
+    width: 110%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 3px solid white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#hot-or-cold{
+    width: 30%;
+}
+
+#status{
+    font-size: 50px;
+}
+
+#current-guess, #guess-left{
+    font-size: 45px;
+}
+
+#instructions{
+    height: auto;
 }

@@ -4,30 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="script.js" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <title>Hot and Cold</title>
+    <link href="style.css" rel="stylesheet">
     <script src="script.js" async></script>
 </head>
 <body>
-    <h1>Hold And Cold</h1>
-    <h2 id="current-guess">Current Guess: </h2>
-    <div>
-        <button>Commit</button>
-        <button>Reset</button>
+    <div id="first">
+        <h3>Instructions</h3>
+        <div class="first-div-holder" id="instructions">  
+            <p>In the game of Hot and Cold, the player gets a <span style="color:gold">set</span> number of <span style="color:royalblue">turns</span> to <span style="color:gold">find</span> a <span style="color:royalblue">number</span>. As the player guesses, (s)he will be informed of how <span style="color:lightgreen">close</span> (s)he is to the actual number in terms of <span style="color:crimson">hot</span> and <span style="color:aqua">cold</span>.</p>
+            <p>To get started <span style="color:gold">add</span> or <span style="color:royalblue">subtract</span> to your current guess by clicking the buttons on the far right. Click <span style="color:lightgreen">commit</span> when you're done!</p>
+            <p>Refer to the following <span style="color:lightgreen">chart</span> for responses to the guess:</p>
+            <table border="1" style="border-color:lightgreen; font-size: medium; width: 100%; text-align: center;">
+                <tr>
+                    <td>Greater than 55</td>
+                    <td style="color:#8A2BE2">Very Cold</td>
+                </tr>
+                <tr>
+                    <td>Within 41-55</td>
+                    <td style="color:#9370DB">Cold</td>
+                </tr>
+                <tr>
+                    <td>Within 31-40</td>
+                    <td style="color: #0000FF">Very Cool</td>
+                </tr>
+                <tr>
+                    <td>Within 21-30</td>
+                    <td style="color: #87CEEB">Cool</td>
+                </tr>
+                <tr>
+                    <td>Within 16-20</td>
+                    <td style="color: #FFD700">Warm</td>
+                </tr>
+                <tr>
+                    <td>Within 9-15</td>
+                    <td style="color: #FFFF00">Very Warm</td>
+                </tr>
+                <tr>
+                    <td>Within 6-8</td>
+                    <td style="color: #FFA500">Hot</td>
+                </tr>
+                <tr>
+                    <td>Within 5</td>
+                    <td style="color: #FF0000">Very Hot</td>
+                </tr>
+            </table>
+        </div>
+        <h3 id="title-log">Log</h3>
+        <div class="first-div-holder" id="logger"></div>
     </div>
-    <div>
-        <button class="add">+1</button>
-        <button class="add">+5</button>
-        <button class="add">+10</button>
-        <button class="add">+25</button>
+    <div id="middle">
+        <h1>Hot And Cold</h1>
+        <h2>Current Guess</h2>
+        <h2 id="current-guess"></h2>
+        <h2>Guess Count</h2>
+        <h2 id="guess-left"></h2>
+        <div>
+            <button id="commit">Commit</button>
+            <button id="reset">Reset</button>
+        </div>
+        <h2 id="status"></h2>
+        <img id="hot-or-cold">
     </div>
-    <div>
-        <button class="subtract">-1</button>
-        <button class="subtract">-5</button>
-        <button class="subtract">-10</button>
-        <button class="subtract">-25</button>
+    <div id="last">
+        <div class="btn-holder"> 
+            <h3>Add</h3>
+            <button class="add">+1</button>
+            <button class="add">+5</button>
+            <button class="add">+10</button>
+            <button class="add">+25</button>
+        </div>
+        <div class="btn-holder">
+            <h3>Subtract</h3>
+            <button class="subtract">-1</button>
+            <button class="subtract">-5</button>
+            <button class="subtract">-10</button>
+            <button class="subtract">-25</button>
+        </div>
+        <p>&copy; Felix Chan</p>
     </div>
-    <h3>Log:</h3>
-    <div id="logger"></div>
 </body>
 </html>
