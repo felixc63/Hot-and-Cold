@@ -68,7 +68,6 @@ function loadGame(){
     statusTxt.innerHTML = "";
     hotOrColdImg.src = "";
     target = Math.floor(Math.random()*100)+1;
-    console.log(target) //delete
     updateCurrentGuess();
     logger.innerHTML = "";   
 }
