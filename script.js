@@ -19,7 +19,7 @@ loadGame();
 commitBtn.onclick = function(){
     if(win || guessCounter == 0){
         if(confirm("Error: The game has already ended.\nPress OK to reset now.")){
-            loadGame();
+            resetBtn.click();
         } 
     }else{
         guessCounter--;
